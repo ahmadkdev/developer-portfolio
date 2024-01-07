@@ -83,7 +83,7 @@
   }
 
   @media (width > 64rem) {
-    padding-block-start: min(8.819cqi, 12.5rem);
+    padding-block-start: min(13.75cqi, 12.5rem);
     padding-block-end: min(8.4cqi, 7.5rem);
   }
 }
