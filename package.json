@@ -14,7 +14,8 @@
     "css",
     "javascript",
     "postcss",
-    "pnpm"
+    "pnpm",
+    "web"
   ],
   "author": "Ahmad Khalid ahmadkhaliddev@gmail.com",
   "license": "ISC",
