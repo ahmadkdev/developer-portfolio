@@ -1,0 +1,56 @@
+.skills {
+  &::after {
+    translate: 0 -50%;
+    z-index: -1;
+  }
+
+  @media (width > 36rem) {
+    &::after {
+      translate: 108% -90%;
+    }
+  }
+
+  @media (width > 64rem) {
+    &::after {
+      translate: 212% -100%;
+    }
+  }
+}
+
+.skills-wrapper {
+  padding-block: 2.5rem;
+
+  @media (width > 36rem) {
+    padding-block: 3.25rem;
+  }
+
+  @media (width > 64rem) {
+    padding-block: 4.5rem 3.25rem;
+  }
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 1.5rem;
+
+  @media (width > 36rem) {
+    row-gap: 3.25rem;
+  }
+
+  @media (width > 64rem) {
+    row-gap: 3.625rem;
+  }
+}
+
+.skills-item {
+  width: 100%;
+
+  @media (width > 36rem) {
+    width: 50%;
+  }
+
+  @media (width > 64rem) {
+    width: calc(100% / 3);
+  }
+}

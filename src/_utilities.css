@@ -1,0 +1,58 @@
+.visually-hidden {
+  clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}
+
+.wrapper {
+  padding-inline: var(--page-side-space);
+}
+
+.h-line {
+  border-bottom: 1px solid var(--primary-text-color);
+  margin-inline: var(--page-side-space);
+}
+
+.bg-img-after {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-size: contain;
+  }
+}
+
+.bg-img-rings {
+  &::after {
+    background-image: url("/images/pattern-rings.svg");
+    width: 530px;
+    aspect-ratio: 530 / 129;
+  }
+
+  @media (width <=36rem) {
+    &::after {
+      max-width: 530px;
+      width: 142%;
+    }
+  }
+}
+
+.bg-img-circle {
+  &::after {
+    background-image: url("/images/pattern-circle.svg");
+    width: 129px;
+    aspect-ratio: 129 / 129;
+  }
+
+  @media (width <=36rem) {
+    &::after {
+      max-width: 129px;
+      width: 75%;
+    }
+  }
+}

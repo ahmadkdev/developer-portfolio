@@ -1,0 +1,116 @@
+.contact {
+  background-color: var(--secondary-bg-color);
+
+  &::after {
+    translate: -100% -50%;
+  }
+
+  @media (width > 36rem) {
+    &::after {
+      translate: -70% -120%;
+    }
+  }
+
+  @media (width > 64rem) {
+    &::after {
+      translate: -38% -140%;
+    }
+  }
+}
+
+.contact-wrapper {
+  padding-block: 3.75rem 5.5rem;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 3.125rem;
+
+  @media (width > 36rem) {
+    padding-block-end: 5.75rem;
+  }
+
+  @media (width > 64rem) {
+    padding-block-start: 5.25rem;
+    justify-content: space-between;
+  }
+}
+
+.contact-header,
+.form {
+  width: 100%;
+  max-width: 27.8125rem;
+
+  @media (width > 64rem) {
+    width: 50%;
+  }
+}
+
+.contact-header {
+  @media (width <=64rem) {
+    text-align: center;
+  }
+}
+
+.contact-sub-h {
+  padding-block-start: 1.25rem;
+
+  @media (width > 64rem) {
+    padding-block-start: 2.25rem;
+  }
+}
+
+.form-control {
+  border-bottom: 1px solid var(--primary-text-color);
+
+  & input,
+  & textarea {
+    width: 100%;
+    outline: unset;
+    padding-inline: 1.5rem;
+    padding-block: 2rem 1rem;
+    line-height: 162.5%;
+
+    &::placeholder {
+      color: var(--secondary-text-color);
+      text-transform: uppercase;
+    }
+  }
+
+  &::after {
+    width: 1.5rem;
+    height: 1.5rem;
+    right: 0;
+    bottom: 1.125rem;
+    background-image: url("/images/icon-invalid.svg");
+    visibility: hidden;
+  }
+
+  & .first-input {
+    padding-block: 0 1rem;
+  }
+
+  & textarea {
+    padding-block-end: 2rem;
+  }
+
+  &:is(.valid) {
+    border-bottom-color: var(--accent-color);
+  }
+
+  &:is(.invalid) {
+    border-bottom-color: var(--invalid-color);
+
+    &::after {
+      visibility: visible;
+    }
+  }
+
+  & .error-msg {
+    position: absolute;
+    right: 0;
+    bottom: -1.5rem;
+    font-size: 0.75rem;
+    color: var(--invalid-color);
+  }
+}

@@ -1,0 +1,14 @@
+@import url("_fonts.css");
+@import url("_variables.css");
+@import url("_globals.css");
+@import url("_utilities.css");
+@import url("_buttons.css");
+@import url("_headings.css");
+
+/* Sections */
+@import url("_header.css");
+@import url("_hero.css");
+@import url("_skills.css");
+@import url("_projects.css");
+@import url("_contact.css");
+@import url("_footer.css");

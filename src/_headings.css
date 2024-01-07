@@ -1,0 +1,53 @@
+.heading {
+  margin: 0;
+  font-weight: 700;
+}
+
+.heading-xl {
+  font-size: calc(40 / 375 * 100cqi);
+  letter-spacing: -0.0284em;
+  line-height: 100%;
+
+  @media (width > 36rem) {
+    font-size: min(9.375cqi, 4.8rem);
+  }
+
+  @media (width > 64rem) {
+    font-size: min(calc(88 / 1440 * 100cqi), 5.5rem);
+  }
+}
+
+.heading-l {
+  font-size: min(8.54cqi, 2rem);
+  letter-spacing: -0.03125em;
+  line-height: 125%;
+
+  @media (width > 36rem) {
+    font-size: min(5.55cqi, 3rem);
+    line-height: 116.667%;
+  }
+}
+
+.heading-m {
+  font-size: min(6.4cqi, 1.5rem);
+  line-height: 133.333%;
+
+  @media (width > 36rem) {
+    font-size: min(3.125cqi, 1.5rem);
+  }
+
+  @media (width > 64rem) {
+    font-size: 1.5rem;
+  }
+}
+
+.sub-heading {
+  font-weight: 500;
+  line-height: 162.5%;
+  color: var(--secondary-text-color);
+
+  @media (width > 36rem) {
+    font-size: 1.125rem;
+    line-height: 155.556%;
+  }
+}

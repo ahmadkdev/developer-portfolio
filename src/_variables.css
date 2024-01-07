@@ -1,0 +1,22 @@
+:root {
+  --primary-bg-color: hsl(0 0% 8%);
+  --secondary-bg-color: hsl(0 0% 14%);
+
+  --primary-text-color: hsl(0 0% 100%);
+  --secondary-text-color: hsl(0 0% 85%);
+
+  --accent-color: hsl(153 71% 59%);
+  --invalid-color: hsl(7 100% 68%);
+
+  --page-side-space: min(4.267cqi, 2rem);
+  --main-text-align: center;
+
+  @media (width > 36rem) {
+    --page-side-space: min(3.90525cqi, 2rem);
+    --main-text-align: left;
+  }
+
+  @media (width > 64rem) {
+    --page-side-space: min(11.46cqi, 10.3125rem);
+  }
+}

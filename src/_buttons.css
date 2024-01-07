@@ -1,0 +1,19 @@
+.btn {
+  text-transform: uppercase;
+  border-bottom: 2px solid var(--accent-color);
+  padding-block: 0.625rem;
+  letter-spacing: 0.142875em;
+  line-height: 162.5%;
+  font-weight: 700;
+  display: inline-block;
+
+  &:hover {
+    color: var(--accent-color);
+  }
+}
+
+.btn-submit {
+  color: var(--primary-text-color);
+  margin-block-start: 1.5rem;
+  float: right;
+}

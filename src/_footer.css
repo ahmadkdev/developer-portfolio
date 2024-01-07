@@ -1,0 +1,15 @@
+.footer {
+  background-color: var(--secondary-bg-color);
+}
+
+.footer-wrapper {
+  padding-block: 2.5rem 3.75rem;
+
+  @media (width > 36rem) {
+    padding-block: 1.875rem 2.5rem;
+  }
+
+  @media (width > 64rem) {
+    padding-block: 3rem 5.75rem;
+  }
+}

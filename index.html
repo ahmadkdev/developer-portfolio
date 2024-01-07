@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="A Frontend Mentor Challenge Single-page developer portfolio">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="/style.css">
+  <link rel="preload" fetchpriority="high" as="image" href="/images/pattern-rings.svg" type="image/svg+xml">
+
+  <title>Frontend Mentor | Single-page developer portfolio</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="wrapper header-wrapper">
+      <div class="links-bar">
+        <h1 aria-label="Adam Keyes" class="logo"><a href="#">adamkeyes</a></h1>
+        <nav class="visually-hidden">
+          <a href="#">Home</a>
+          <a href="#about-me">About me</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact-me">Contact me</a>
+        </nav>
+
+        <h2 class="visually-hidden">Find me online</h2>
+
+        <div class="social-links">
+          <a href="https://github.com/" class="social-link" target="_blank">
+            <span class="visually-hidden">
+              go to my Github
+            </span>
+            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+              <title>Github</title>
+              <use href="#iconGithub"></use>
+            </svg>
+          </a>
+          <a href="https://www.frontendmentor.io/" class="social-link" target="_blank">
+            <span class="visually-hidden">
+              go to my Frontend Mentor
+            </span>
+            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+              <title>Frontend Mentor</title>
+              <use href="#iconFrontendmentor"></use>
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/" class="social-link" target="_blank">
+            <span class="visually-hidden">
+              go to my Linkedin
+            </span>
+            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+              <title>Linkedin</title>
+              <use href="#iconLinkedin"></use>
+            </svg>
+          </a>
+          <a href="https://twitter.com/" class="social-link" target="_blank">
+            <span class="visually-hidden">
+              go to my X
+            </span>
+            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+              <title>X</title>
+              <use href="#iconX"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </header>
+
+  <main>
+    <section id="about-me" class="hero bg-img-after bg-img-rings">
+      <div class="hero-wrapper">
+        <h2 class="visually-hidden">About me</h2>
+        <picture class="hero-img-wrap bg-img-after bg-img-circle">
+          <source media="(width > 64rem)" srcset="/images/image-profile-desktop.webp" width="445" height="720">
+          <source media="(width > 36rem)" srcset="/images/image-profile-tablet.webp" width="322" height="600">
+          <img src="/images/image-profile-mobile.webp" alt="picture of Adam Keyes" width="174" height="383">
+        </picture>
+        <div class="hero-text">
+          <h3 class="heading heading-xl hero-headline"><span>Nice to </span>meet you! I'm <span>Adam Keyes</span>.</h3>
+
+          <p class="sub-heading hero-caption">Based in the UK, I'm a front-end developer passionate about building
+            accessible
+            web
+            apps that users love.</p>
+          <a href="#contact-me" class="btn">Contact me</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="h-line"></div>
+
+    <section id="skills" class="skills bg-img-after bg-img-rings">
+      <div class="wrapper skills-wrapper">
+        <h2 class="visually-hidden">Skills</h2>
+        <ul class="skills-list">
+          <li class="skills-item">
+            <h3 class="heading heading-l">HTML</h3>
+            <p class="sub-heading">4 Years Experience</p>
+          </li>
+          <li class="skills-item">
+            <h3 class="heading heading-l">CSS</h3>
+            <p class="sub-heading">4 Years Experience</p>
+          </li>
+          <li class="skills-item">
+            <h3 class="heading heading-l">JavaScript</h3>
+            <p class="sub-heading">4 Years Experience</p>
+          </li>
+          <li class="skills-item">
+            <h3 class="heading heading-l">Accessibility</h3>
+            <p class="sub-heading">4 Years Experience</p>
+          </li>
+          <li class="skills-item">
+            <h3 class="heading heading-l">React</h3>
+            <p class="sub-heading">3 Years Experience</p>
+          </li>
+          <li class="skills-item">
+            <h3 class="heading heading-l">Sass</h3>
+            <p class="sub-heading">3 Years Experience</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="h-line"></div>
+
+    <section id="projects" class="projects">
+      <div class="wrapper projects-wrapper">
+        <header class="projects-header">
+          <h2 class="heading heading-xl">Projects</h2>
+          <a href="#contact-me" class="btn">Contact me</a>
+        </header>
+
+        <div class="projects-list">
+
+          <div class="projects-item">
+            <picture class="project-thumb">
+              <source media="(min-width: 64rem)" srcset="/images/thumbnail-project-1-large.webp" width="540"
+                height="400">
+              <img src="/images/thumbnail-project-1-small.webp" alt="screenshot of design portfolio website project"
+                width="343" height="253">
+            </picture>
+
+            <h3 class="heading heading-m project-title">Design portfolio</h3>
+            <p class="project-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+            </p>
+
+            <div class="project-links">
+              <a href="https://www.netlify.com/" class="btn">View project</a>
+              <a href="https://github.com/" class="btn">View code</a>
+            </div>
+          </div>
+
+          <div class="projects-item">
+            <picture class="project-thumb">
+              <source media="(min-width: 64rem)" srcset="/images/thumbnail-project-2-large.webp" width="540"
+                height="400">
+              <img src="/images/thumbnail-project-2-small.webp" alt="screenshot of E-learning landing page project"
+                width="343" height="253">
+            </picture>
+
+            <h3 class="heading heading-m project-title">E-learning landing page</h3>
+            <p class="project-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+            </p>
+
+            <div class="project-links">
+              <a href="https://www.netlify.com/" class="btn">View project</a>
+              <a href="https://github.com/" class="btn">View code</a>
+            </div>
+          </div>
+
+          <div class="projects-item">
+            <picture class="project-thumb">
+              <source media="(min-width: 64rem)" srcset="/images/thumbnail-project-3-large.webp" width="540"
+                height="400">
+              <img src="/images/thumbnail-project-3-small.webp" alt="screenshot of Todo web app project" width="343"
+                height="253">
+            </picture>
+
+            <h3 class="heading heading-m project-title">Todo web app</h3>
+            <p class="project-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </p>
+
+            <div class="project-links">
+              <a href="https://www.netlify.com/" class="btn">View project</a>
+              <a href="https://github.com/" class="btn">View code</a>
+            </div>
+          </div>
+
+          <div class="projects-item">
+            <picture class="project-thumb">
+              <source media="(min-width: 64rem)" srcset="/images/thumbnail-project-4-large.webp" width="540"
+                height="400">
+              <img src="/images/thumbnail-project-4-small.webp" alt="screenshot of Entertainment web app project"
+                width="343" height="253">
+            </picture>
+
+            <h3 class="heading heading-m project-title">Entertainment web app</h3>
+            <p class="project-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </p>
+
+            <div class="project-links">
+              <a href="https://www.netlify.com/" class="btn">View project</a>
+              <a href="https://github.com/" class="btn">View code</a>
+            </div>
+          </div>
+
+          <div class="projects-item">
+            <picture class="project-thumb">
+              <source media="(min-width: 64rem)" srcset="/images/thumbnail-project-5-large.webp" width="540"
+                height="400">
+              <img src="/images/thumbnail-project-5-small.webp" alt="screenshot of Memory Game project" width="343"
+                height="253">
+            </picture>
+
+            <h3 class="heading heading-m project-title">Memory Game</h3>
+            <p class="project-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </p>
+
+            <div class="project-links">
+              <a href="https://www.netlify.com/" class="btn">View project</a>
+              <a href="https://github.com/" class="btn">View code</a>
+            </div>
+          </div>
+
+          <div class="projects-item">
+            <picture class="project-thumb">
+              <source media="(min-width: 64rem)" srcset="/images/thumbnail-project-6-large.webp" width="540"
+                height="400">
+              <img src="/images/thumbnail-project-6-small.webp" alt="screenshot of Art gallery showcase project"
+                width="343" height="253">
+            </picture>
+
+            <h3 class="heading heading-m project-title">Art gallery showcase</h3>
+            <p class="project-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </p>
+
+            <div class="project-links">
+              <a href="https://www.netlify.com/" class="btn">View project</a>
+              <a href="https://github.com/" class="btn">View code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact-me" class="contact bg-img-after bg-img-rings">
+      <div class="wrapper contact-wrapper">
+        <header class="contact-header">
+          <h2 class="heading heading-xl">Contact</h2>
+
+          <p class="sub-heading contact-sub-h">I would love to hear about your project and how I could help. Please
+            fill in the form, and I'll get back to you as soon as possible.</p>
+        </header>
+
+        <form class="form" novalidate>
+          <p class="form-control bg-img-after">
+            <label for="name" class="visually-hidden">Name</label>
+            <input type="text" id="name" name="name" placeholder="Name" autocomplete="name" class="first-input"
+              required>
+            <span class="error-msg"></span>
+          </p>
+          <p class="form-control bg-img-after">
+            <label for="email" class="visually-hidden">Email</label>
+            <input type="email" id="email" name="email" placeholder="Email" autocomplete="email" required>
+            <span class="error-msg"></span>
+          </p>
+          <p class="form-control bg-img-after">
+            <label for="message" class="visually-hidden">Message</label>
+            <textarea name="message" id="message" cols="30" rows="3" placeholder="Message" required></textarea>
+            <span class="error-msg"></span>
+          </p>
+          <p>
+            <button type="submit" class="btn btn-submit">Send message</button>
+          </p>
+        </form>
+      </div>
+      <div class="h-line"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrapper footer-wrapper">
+      <div class="links-bar">
+        <a href="#" class="logo">adamkeyes</a>
+        <nav class="visually-hidden">
+          <a href="#">Home</a>
+          <a href="#about-me">About me</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact-me">Contact me</a>
+        </nav>
+        <h2 class="visually-hidden">Find me online</h2>
+
+        <div class="social-links">
+          <a href="https://github.com/" class="social-link" target="_blank">
+            <span class="visually-hidden">
+              go to my Github
+            </span>
+            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+              <title>Github</title>
+              <use href="#iconGithub"></use>
+            </svg>
+          </a>
+          <a href="https://www.frontendmentor.io/" class="social-link" target="_blank">
+            <span class="visually-hidden">
+              go to my Frontend Mentor
+            </span>
+            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+              <title>Frontend Mentor</title>
+              <use href="#iconFrontendmentor"></use>
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/" class="social-link" target="_blank">
+            <span class="visually-hidden">
+              go to my Linkedin
+            </span>
+            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+              <title>Linkedin</title>
+              <use href="#iconLinkedin"></use>
+            </svg>
+          </a>
+          <a href="https://twitter.com/" class="social-link" target="_blank">
+            <span class="visually-hidden">
+              go to my X
+            </span>
+            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+              <title>X</title>
+              <use href="#iconX"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <svg style="display:none" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="iconGithub" viewBox="0 0 24 24">
+      <path
+        d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+    </symbol>
+    <symbol id="iconFrontendmentor" viewBox="0 0 24 24">
+      <path
+        d="M12.1706 1.2719a.732.732 0 00-.7186.732v13.914a.732.732 0 00.732.732.732.732 0 00.7318-.732V2.004a.732.732 0 00-.7452-.732zm11.0741 4.1685a.7339.7339 0 00-.2764.063L16.686 8.307a.7329.7329 0 000 1.3361l6.2823 2.8134a.7378.7378 0 00.2993.0648.732.732 0 00.2973-1.401l-4.786-2.1443 4.786-2.1366a.7339.7339 0 00.3698-.9664.7339.7339 0 00-.69-.4327zm-22.499 5.032a.7316.7316 0 00-.7223.9149c1.736 6.677 7.7748 11.341 14.6822 11.341a.732.732 0 000-1.464 13.7055 13.7055 0 01-13.266-10.2449.7316.7316 0 00-.6939-.547z" />
+    </symbol>
+    <symbol id="iconLinkedin" viewBox="0 0 24 24">
+      <path
+        d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+    </symbol>
+    <symbol id="iconX" viewBox="0 0 24 24">
+      <path
+        d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z" />
+    </symbol>
+  </svg>
+  <script>
+    // form validation using JS constraint API
+    const form = document.querySelector("form");
+
+    let fields = Array.from(form.elements);
+
+    fields.pop();
+
+    fields.forEach(i => {
+      i.addEventListener("input", (event) => {
+        if (i.validity.valid) {
+          handleValidInput(i);
+        } else {
+          handleInvalidInput(i);
+        }
+      });
+    });
+
+    form.addEventListener("submit", (event) => {
+      fields.forEach(i => {
+        if (i.validity.valid) {
+          handleValidInput(i);
+        } else {
+          handleInvalidInput(i);
+          event.preventDefault();
+        }
+      });
+    });
+
+    function handleValidInput(input) {
+      input.parentElement.classList.remove("invalid");
+      input.parentElement.classList.add("valid");
+      input.nextElementSibling.textContent = "";
+    }
+
+    function handleInvalidInput(input) {
+      input.parentElement.classList.remove("valid");
+      input.parentElement.classList.add("invalid");
+
+      if (input.validity.valueMissing) {
+        input.nextElementSibling.textContent = "Sorry, this field is required.";
+      } else if (email.validity.typeMismatch) {
+        input.nextElementSibling.textContent = "Sorry, invalid format here.";
+      } else {
+        input.nextElementSibling.textContent = "Sorry, something is wrong.";
+      }
+    }
+
+  </script>
+</body>
+
+</html>

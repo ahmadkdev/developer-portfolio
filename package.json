@@ -1,0 +1,27 @@
+{
+  "name": "developer-portfolio",
+  "version": "1.0.0",
+  "description": "single-page developer portfolio is a frontend mentor challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postcss:w": "postcss src/main.css -o style.css --watch --verbose",
+    "build": "postcss src/main.css -o style.css"
+  },
+  "keywords": [
+    "frontend mentor",
+    "html",
+    "css",
+    "javascript",
+    "postcss",
+    "pnpm"
+  ],
+  "author": "Ahmad Khalid ahmadkhaliddev@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "cssnano": "^6.0.3",
+    "postcss": "^8.4.33",
+    "postcss-cli": "^11.0.0",
+    "postcss-import": "^16.0.0"
+  }
+}

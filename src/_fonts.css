@@ -1,0 +1,17 @@
+/* space-grotesk-500 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/space-grotesk-v16-latin-500.woff2') format('woff2');
+}
+
+/* space-grotesk-700 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/space-grotesk-v16-latin-700.woff2') format('woff2');
+}
