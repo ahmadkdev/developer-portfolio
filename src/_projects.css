@@ -79,6 +79,14 @@
   font-size: 1.125rem;
   padding-block-end: 1rem;
   word-spacing: 0.75em;
+
+  @media (width > 36rem) {
+    padding-block-end: 0.75rem;
+  }
+
+  @media (width > 64rem) {
+    padding-block-end: 0;
+  }
 }
 
 .project-links {
