@@ -54,3 +54,9 @@
     width: calc(100% / 3);
   }
 }
+
+.skill-title {
+  @media (width > 36rem) {
+    padding-block-end: 0.8rem;
+  }
+}

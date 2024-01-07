@@ -41,7 +41,7 @@
   @container (width > 64rem) {
     grid-template-columns: var(--page-side-space) 1fr min(31cqi, 445px) var(--page-side-space);
     grid-template-areas: ". hero-text hero-img .";
-    padding-block-end: 7cqi;
+    padding-block-end: 7.222cqi;
   }
 }
 
@@ -83,7 +83,7 @@
   }
 
   @media (width > 64rem) {
-    padding-block-start: min(13.9cqi, 12.5rem);
+    padding-block-start: min(8.819cqi, 12.5rem);
     padding-block-end: min(8.4cqi, 7.5rem);
   }
 }

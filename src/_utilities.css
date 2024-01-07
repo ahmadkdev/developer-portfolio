@@ -17,6 +17,12 @@
   margin-inline: var(--page-side-space);
 }
 
+.h-line-first {
+  @media (width > 36rem) {
+    display: none;
+  }
+}
+
 .bg-img-after {
   position: relative;
 
